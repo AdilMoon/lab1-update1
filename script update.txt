@@ -1,0 +1,15 @@
+-- create
+create table 830room (
+ stdId integer primary key,
+ name text not null,
+ surname text not null,
+ age text not null
+);
+
+insert into 830room values (1, 'Adilzhan', 'Erdenbaev', '17');
+insert into 830room values (2, 'Aqan', 'Muhtarbek', '18');
+
+update 830room
+set age=18
+where stdId=1;
+select * from 830room;
